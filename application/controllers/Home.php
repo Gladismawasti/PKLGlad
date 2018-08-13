@@ -5,7 +5,14 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('/main/home');
+		$data['content'] ='main/main';
+		$this->load->view('/main/home', $data);
+	}
+
+	public function profile()
+	{
+		$data['content'] ='main/profile';
+		$this->load->view('/main/home', $data);
 	}
 }
 
