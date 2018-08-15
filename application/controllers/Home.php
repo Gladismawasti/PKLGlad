@@ -14,6 +14,12 @@ class Home extends CI_Controller {
 		$data['content'] ='main/profile';
 		$this->load->view('/main/home', $data);
 	}
+
+	public function about()
+	{
+		$data['content'] ='main/about';
+		$this->load->view('/main/home', $data);
+	}
 }
 
 /* End of file Home.php */
