@@ -97,7 +97,6 @@ class Model_admin extends CI_Model {
 		}
 
 
-
 		public function tambah_data()
 		{
 			$this->load->model('Model_upload');
@@ -112,7 +111,6 @@ class Model_admin extends CI_Model {
 			$i = $this->input->post('jabatan');
 			$j = $this->input->post('email');
 			$k = $this->input->post('jenis_permohonan');
-
 			$Tahun = $this->input->post('Tahun');
 
 			$object['nama'] = $a;

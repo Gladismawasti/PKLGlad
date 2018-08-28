@@ -47,26 +47,23 @@ form input[type=text] {float:left;width:80%;}
 <body>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">Brand</a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+       <div class="navbar-header">
+      <a class="navbar-brand" href="<?php echo base_url('/index.php/home/beranda') ?>">Nama Aplikasi</a>
     </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="<?php echo base_url('/index.php/home/beranda') ?>">Beranda <span class="sr-only">(current)</span></a></li>
+         <li class=""><a href="<?php echo base_url('/') ?>">Tambah Permohonan <span class="sr-only">(current)</span></a></li>
+          <li class=""><a href="<?php echo base_url('/index.php/home/about') ?>">Tambah Data <span class="sr-only">(current)</span></a></li>
+    <!-- Tambah Permohonan Form pendaftaran user id -->
+   
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="/index.php/home/about">Link</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/index.php/home/profile">Action</a></li>
+            <li><a href="<?php echo base_url('/index.php/home/profile') ?>">Action</a></li>
             <li><a href="#">Another action</a></li>
             <li><a href="#">Something else here</a></li>
             <li role="separator" class="divider"></li>
